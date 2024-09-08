@@ -1,5 +1,4 @@
 Pong Game
-<img width="448" alt="pong" src="https://github.com/user-attachments/assets/51c39652-adfc-42d1-af56-d9cbd4feb7a8">
 Overview
 This is a classic Pong game built using Python and the Turtle module. The game features two paddles and a ball, and the objective is to prevent the ball from passing your paddle by moving it up and down. The game offers simple controls and a one-sided hurdle challenge.
 
@@ -8,7 +7,7 @@ Single-player mode: Play against a one-sided hurdle.
 Simple controls: Move your paddle up and down using the keyboard.
 Hurdle Challenge: A hurdle moves up and down, adding an extra level of difficulty.
 Score Tracking: The game keeps track of your score as you play.
-Python Turtle Module: Lightweight and easy to understand graphics using the built-in Turtle module in Python.
+Python Turtle Module: Lightweight and easy-to-understand graphics using the built-in Turtle module in Python.
 Game Controls
 Use the W key to move the paddle up.
 Use the S key to move the paddle down.
@@ -42,3 +41,6 @@ Implement a scoring system for the opponent as well.
 Add sound effects for a more immersive experience.
 Contributing
 Contributions are welcome! Feel free to fork the repository and submit pull requests with improvements.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
