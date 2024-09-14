@@ -1,46 +1,29 @@
-Pong Game
-Overview
-This is a classic Pong game built using Python and the Turtle module. The game features two paddles and a ball, and the objective is to prevent the ball from passing your paddle by moving it up and down. The game offers simple controls and a one-sided hurdle challenge.
+<img width="448" alt="pong" src="https://github.com/user-attachments/assets/f703a807-879e-4882-9efa-ef099787a7ac">
 
-Features
-Single-player mode: Play against a one-sided hurdle.
-Simple controls: Move your paddle up and down using the keyboard.
-Hurdle Challenge: A hurdle moves up and down, adding an extra level of difficulty.
-Score Tracking: The game keeps track of your score as you play.
-Python Turtle Module: Lightweight and easy-to-understand graphics using the built-in Turtle module in Python.
-Game Controls
-Use the W key to move the paddle up.
-Use the S key to move the paddle down.
-Technologies Used
-Python: The core language used to implement the game.
-Turtle Module: A built-in Python library used for graphics and animation.
-How to Run
-Install Python: If you don't already have Python installed, you can download it here.
+### PONG Game:
+This project is a **Pong Game** implemented using Python's **Turtle module**. The game mimics the classic Pong, where two paddles move vertically to hit a bouncing ball. The objective is to prevent the ball from passing the paddle on your side, while trying to score by making the ball pass the opponent's paddle.
 
-Clone the Repository:
+### Key Components:
+1. **Ball Class**:
+   - The `Ball` class defines the ball's behavior, such as its shape, movement, speed, and bouncing mechanics. It contains methods to move the ball, reverse its direction when hitting a paddle or a boundary, and reset its position when a point is scored.
 
-bash
-Copy code
-git clone https://github.com/yourusername/pong-game.git
-Run the Game: Navigate to the project folder and run the pong.py file:
+2. **Paddle Class**:
+   - The `Paddle` class represents the paddles controlled by the players. Each paddle can move up and down within the game boundaries. Player 1 controls the left paddle using the **W** and **S** keys, while Player 2 controls the right paddle using the **Up** and **Down** arrow keys.
 
-bash
-Copy code
-python pong.py
-Play: Control the paddle with the keyboard and try to keep the ball in play as long as possible.
+3. **Score Class**:
+   - The `Score` class manages the game's scorekeeping system, displaying the scores of both players on the screen. When the ball crosses a boundary (indicating a point scored), the corresponding player's score is updated and displayed.
 
-Installation
-To install the game, follow these steps:
+4. **Game Logic**:
+   - The game loop continuously moves the ball and updates the screen based on the ball's position. The ball bounces off the top and bottom boundaries, as well as the paddles, with an increasing speed on every paddle bounce. If the ball crosses the left or right edge of the screen, it resets to the center, and the opposing player earns a point.
 
-Clone the repository using the command above.
-Ensure you have Python installed (version 3.x recommended).
-No additional libraries are needed beyond the standard Python distribution.
-Future Enhancements
-Add multiplayer functionality for competitive play.
-Implement a scoring system for the opponent as well.
-Add sound effects for a more immersive experience.
-Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests with improvements.
+### Controls:
+- **Left Paddle**: Move using the `W` key to go up and the `S` key to go down.
+- **Right Paddle**: Move using the `Up` arrow key to go up and the `Down` arrow key to go down.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+### Features:
+- **Paddle and Ball Collision**: The ball bounces back when it hits a paddle.
+- **Wall Collision**: The ball bounces off the top and bottom boundaries.
+- **Scorekeeping**: The game tracks the score for each player, updating it when the ball passes a paddle.
+- **Speed Increase**: Each time the ball bounces off a paddle, its speed slightly increases.
+
+This project demonstrates basic object-oriented programming (OOP) principles in Python, such as class inheritance and method overriding, while using the **Turtle graphics library** to build a simple and interactive graphical game.
